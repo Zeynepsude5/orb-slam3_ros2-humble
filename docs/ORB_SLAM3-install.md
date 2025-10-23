@@ -28,10 +28,16 @@ export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:/usr/local
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ```
 
-Install ORB_SLAM3 and build:
+Install ORB_SLAM3:
 ```
 cd ~
 git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git
+```
+
+Build:
+IMPORTANT NOTE: Before building ORB-SLAM3 make sure your OpenCV version is 4.5.4 with 'pkg-config --modversion opencv4
+'
+```
 cd ORB_SLAM3
 chmod +x build.sh
 ./build.sh
